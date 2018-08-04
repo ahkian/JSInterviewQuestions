@@ -28,7 +28,7 @@
 
 ## **Currying**
 
-##Event Delegation
+## Event Delegation
 
 ## Bubbling
 
