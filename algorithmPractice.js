@@ -47,8 +47,8 @@ return rtnStr.join('');
 
 function isPalindrome(str){
   var i, len = str.length;
-  for(i =0; i<len/2; i++){
-    if (str[i]!== str[len -1 -i])
+  for(i = 0; i < len / 2; i++){
+    if (str[i]!== str[len - 1 - i])
        return false;
   }
   return true;
@@ -59,11 +59,11 @@ function isPalindrome(str){
 // removeDuplicates([2, 2, 2, 2, 1]) => [2, 1]
 
 function removeDuplicates(arr){
-  var exists ={},
+  var exists = {},
       outArr = [],
       elm;
 
-  for(var i =0; i<arr.length; i++){
+  for(var i = 0; i< arr.length; i++){
     elm = arr[i];
     if(!exists[elm]){
       outArr.push(elm);
