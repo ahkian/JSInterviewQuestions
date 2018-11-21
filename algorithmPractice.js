@@ -122,13 +122,13 @@ function removeDuplicates(arr) {
 }
 
 function removeDuplicates(arr){
-  const exists = {},
-    outArr = [];
+  var exists = {},
+      outArr = [],
+      elm;
 
-  for(var i = 0; i < arr.length; i++){
-    const elm = arr[i];
-
-    if(!(elm in exists)) {
+  for(var i = 0; i< arr.length; i++){
+    elm = arr[i];
+    if(!exists[elm]){
       outArr.push(elm);
       exists[elm] = true;
     }
