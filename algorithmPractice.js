@@ -304,3 +304,20 @@ function uni (arr) {
   return Object.keys(obj)
 }
 uni([1, 1, 3, 4, 4])
+
+
+//log n steps
+function step(n){
+  for(let row = 0;row < n; row++){
+    let holder = ""
+    for(let col = 0; col < n; col++){
+      if(col <= row){
+        holder += '#'
+      } else{
+        holder += ' '
+      }
+    }
+    console.log(holder)
+  }
+  return
+}
