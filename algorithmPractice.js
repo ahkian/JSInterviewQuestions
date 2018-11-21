@@ -323,3 +323,23 @@ function step(n){
   }
   return
 }
+
+function factorial(int){
+    var arr = new Array(int + 1).fill("s")
+    var factArr = Object.keys(arr).slice(1)
+    return factArr.reduce((acc, currVal) => acc * parseInt(currVal), 1)
+}
+
+function solution(N, K) {
+    if (N - K < 0){
+        return - 1
+    }
+    var answer = factorial(N)/(factorial(K) * factorial(N - K))
+    if (answer >= 1000000){
+        return -1
+    } else if (typeof N !== "number" || typeof K !== "number"){
+        return -1
+    } else{
+        return answer
+    }
+}
